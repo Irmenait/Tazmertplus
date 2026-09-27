@@ -1,0 +1,65 @@
+:root {
+  --teal: #006666;
+  --teal-dark: #004d4d;
+  --teal-light: #d6eaea;
+  --orange: #e66b27;
+  --bg: #f9f8f3;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #4fd1c5;
+    --teal-dark: #9be7df;
+    --teal-light: #12383a;
+    --orange: #f4a261;
+    --bg: #111416;
+    --card: #1b2022;
+    --text: #e8ecee;
+    --muted: #a3acb3;
+    --border: #2c3437;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+header { text-align: center; margin-bottom: 28px; }
+header img { width: 112px; height: 112px; }
+h1 { color: var(--teal); font-size: 2rem; line-height: 1.2; margin: 8px 0; }
+h2 { color: var(--teal-dark); font-size: 1.25rem; margin: 28px 0 8px; }
+a { color: var(--teal); }
+.lead { font-size: 1.1rem; color: var(--muted); margin: 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 16px 0;
+}
+.features { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.features li { padding-left: 30px; position: relative; }
+.features li::before {
+  content: "";
+  position: absolute; left: 4px; top: 8px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--orange);
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--border); }
+th { color: var(--teal-dark); }
+.note { background: var(--teal-light); border-radius: 12px; padding: 14px 16px; }
+footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  h1 { font-size: 1.6rem; }
+  th, td { display: block; border: none; padding: 4px 0; }
+  tr { display: block; border-bottom: 1px solid var(--border); padding: 8px 0; }
+  tr.head { display: none; }
+  td:first-child { font-weight: 600; color: var(--teal-dark); }
+}
