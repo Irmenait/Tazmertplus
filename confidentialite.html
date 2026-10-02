@@ -103,10 +103,35 @@
     <p>
       <strong>Partage avec votre coach (facultatif)</strong> : rien n'est partagé par défaut. Dans « Mon partage », vous pouvez
       activer séparément : vos repas (aliments, quantités, calories, macronutriments et votre objectif calorique du jour), vos
-      séances et activités (exercices, séries, charges, durée, ressenti, autres activités enregistrées) et vos pesées. Seuls les
+      séances et activités (exercices, séries, charges, durée, ressenti, autres activités enregistrées, ainsi que votre programme
+      d'entraînement avec le matériel, le niveau et les zones à ménager indiqués) et vos pesées. Seuls les
       14 derniers jours sont envoyés, mis à jour automatiquement environ toutes les 30 minutes, et lisibles uniquement par votre
       coach tant que l'accompagnement est en cours. Couper un partage, ou mettre fin à l'accompagnement, efface les données
       envoyées. Votre profil, vos photos et votre adresse e-mail ne sont jamais partagés.
+    </p>
+    <p>
+      <strong>Commentaires et propositions du coach</strong> : votre coach peut commenter une journée partagée et vous proposer
+      des objectifs nutritionnels ou un programme d'entraînement. Rien ne change sur votre téléphone tant que vous n'avez pas
+      touché « Appliquer » ; vous pouvez refuser.
+    </p>
+    <p>
+      <strong>Avis</strong> : si un coach vous accompagne ou vous a accompagné, vous pouvez publier un avis (note de 1 à 5 et
+      commentaire facultatif), visible par les membres connectés avec votre prénom. Vous pouvez le modifier ; l'éditeur de
+      l'application peut retirer un avis inapproprié.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Premium (code d'activation)</h2>
+    <p>
+      Certaines fonctions avancées sont réservées au Premium, activé par un code d'un an que l'éditeur vous remet. L'application
+      ne traite aucun paiement et ne voit aucune donnée bancaire : le règlement se fait directement avec l'éditeur, en dehors
+      de l'application.
+    </p>
+    <p>
+      Le code est lié à votre compte : sont enregistrés sur Firebase votre identifiant de compte, votre prénom, le code utilisé,
+      la date de début et la durée. L'éditeur voit la liste des comptes Premium (prénom et dates) et peut arrêter un accès.
+      Le statut est aussi gardé sur votre téléphone pour fonctionner hors connexion.
     </p>
   </section>
 
@@ -116,7 +141,7 @@
       <tr class="head"><th>Service</th><th>Ce qui est envoyé</th><th>Quand</th></tr>
       <tr><td>Open Food Facts</td><td>Le texte recherché ou le code-barres scanné (rien qui vous identifie).</td><td>Recherche d'un produit du commerce.</td></tr>
       <tr><td>Le service d'IA que vous choisissez : Google (Gemini), Anthropic (Claude) ou Mistral AI</td><td>Coach et bilans : un résumé chiffré de votre profil (sexe, âge, taille, poids, objectifs), de vos repas, pesées, activités, séances d'entraînement, de vos questions et, si vous le remplissez, du texte « Mon quotidien et mes contraintes ». Scan : la photo du plat ou de l'étiquette et l'indication éventuelle.</td><td>Seulement si vous avez saisi <strong>votre propre clé API</strong> et utilisez le coach ou le scan photo.</td></tr>
-      <tr><td>Firebase (Google)</td><td>Communauté : votre identifiant de compte Google, votre pseudo et ce que vous publiez ou écrivez dans vos cercles ; fiche coach, échanges avec un coach et, si vous l'activez, ce que vous partagez avec lui.</td><td>Seulement si vous rejoignez la communauté.</td></tr>
+      <tr><td>Firebase (Google)</td><td>Communauté : votre identifiant de compte Google, votre pseudo et ce que vous publiez ou écrivez dans vos cercles ; fiche coach, échanges avec un coach et, si vous l'activez, ce que vous partagez avec lui ; statut Premium.</td><td>Seulement si vous rejoignez la communauté.</td></tr>
       <tr><td>Health Connect (Android)</td><td>Rien n'est envoyé : l'application <em>lit</em> vos calories dépensées et séances d'exercice, avec votre autorisation.</td><td>Onglet Activité.</td></tr>
     </table>
     <p>
