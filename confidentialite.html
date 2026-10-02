@@ -12,7 +12,7 @@
 <main>
   <header>
     <h1>Politique de confidentialité</h1>
-    <p class="lead">Application Android Tazmert Plus — dernière mise à jour : 27 septembre 2026</p>
+    <p class="lead">Application Android Tazmert Plus — dernière mise à jour : 2 octobre 2026</p>
   </header>
 
   <section class="card">
@@ -55,16 +55,76 @@
   </section>
 
   <section class="card">
+    <h2>Mode invité</h2>
+    <p>
+      Vous pouvez aussi utiliser l'application sans compte Google. Dans ce cas, aucune donnée ne quitte votre téléphone
+      pour être sauvegardée, et les fonctions d'IA (coach, scan de photos) sont désactivées.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Communauté (cercles privés)</h2>
+    <p>
+      La communauté est facultative et demande un compte Google (elle n'est pas disponible en mode invité).
+      Vous créez un cercle privé ou en rejoignez un avec un code d'invitation. Seuls les membres d'un cercle voient ce qui y est
+      publié ; cette règle est appliquée par le serveur, pas seulement par l'application.
+    </p>
+    <p>
+      Rien n'est partagé automatiquement : seul ce que vous choisissez de publier est envoyé, à savoir un repas (nom, aliments,
+      quantités, calories et macronutriments), une séance (exercices, séries, charges, durée, ressenti), un mot facultatif, une photo si vous en ajoutez une (réduite avant l'envoi),
+      vos réactions, commentaires, messages de discussion et messages privés (lisibles uniquement par vous et leur destinataire, pas même par le créateur du cercle), votre score dans les défis auxquels vous participez (un nombre de jours réussis, calculé sur votre téléphone), ainsi que le pseudo choisi pour le cercle. Votre poids, votre profil et votre adresse e-mail
+      ne sont jamais montrés aux autres membres.
+    </p>
+    <p>
+      Ces données sont hébergées par Google (Firebase Authentication pour la connexion, Cloud Firestore pour les cercles, les
+      publications et la discussion). Pour vous prévenir des nouveaux messages, l'application vérifie vos cercles environ toutes
+      les 30 minutes, uniquement en lecture ; ces notifications se coupent d'un geste (cloche dans la Communauté). Vous pouvez supprimer vos publications et commentaires à tout moment, et quitter un cercle en supprimant
+      vos publications. Le créateur d'un cercle peut retirer un membre ou une publication. Pour effacer entièrement vos données
+      de communauté, écrivez à l'adresse de contact ci-dessous.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Coachs (accompagnement gratuit)</h2>
+    <p>
+      Depuis la communauté, vous pouvez demander à un coach d'être accompagné, gratuitement. Les coachs sont des membres
+      dont le diplôme ou la qualification a été vérifié par l'éditeur de l'application avant leur apparition dans l'annuaire.
+    </p>
+    <p>
+      <strong>Si vous êtes coach</strong> : votre fiche (pseudo, spécialités, langues, diplôme déclaré, présentation) est
+      visible par les membres connectés une fois validée. La copie de diplôme que vous envoyez par e-mail sert uniquement à
+      cette vérification et n'est pas publiée. Vous pouvez retirer votre fiche à tout moment.
+    </p>
+    <p>
+      <strong>Si vous demandez un accompagnement</strong> : le coach reçoit votre pseudo et l'objectif que vous écrivez.
+      Une fois la demande acceptée, vos messages ne sont lisibles que par vous deux (pas même par l'éditeur de l'application) ;
+      chacun peut supprimer ses messages et mettre fin à l'accompagnement.
+    </p>
+    <p>
+      <strong>Partage avec votre coach (facultatif)</strong> : rien n'est partagé par défaut. Dans « Mon partage », vous pouvez
+      activer séparément : vos repas (aliments, quantités, calories, macronutriments et votre objectif calorique du jour), vos
+      séances et activités (exercices, séries, charges, durée, ressenti, autres activités enregistrées) et vos pesées. Seuls les
+      14 derniers jours sont envoyés, mis à jour automatiquement environ toutes les 30 minutes, et lisibles uniquement par votre
+      coach tant que l'accompagnement est en cours. Couper un partage, ou mettre fin à l'accompagnement, efface les données
+      envoyées. Votre profil, vos photos et votre adresse e-mail ne sont jamais partagés.
+    </p>
+  </section>
+
+  <section class="card">
     <h2>Services tiers utilisés, uniquement à votre demande</h2>
     <table>
       <tr class="head"><th>Service</th><th>Ce qui est envoyé</th><th>Quand</th></tr>
       <tr><td>Open Food Facts</td><td>Le texte recherché ou le code-barres scanné (rien qui vous identifie).</td><td>Recherche d'un produit du commerce.</td></tr>
-      <tr><td>Anthropic (Claude)</td><td>Coach : un résumé chiffré de votre profil, de vos repas, pesées et activités. Scan : la photo du plat ou de l'étiquette et l'indication éventuelle.</td><td>Seulement si vous avez saisi <strong>votre propre clé API</strong> et utilisez le coach ou le scan photo.</td></tr>
+      <tr><td>Le service d'IA que vous choisissez : Google (Gemini), Anthropic (Claude) ou Mistral AI</td><td>Coach et bilans : un résumé chiffré de votre profil (sexe, âge, taille, poids, objectifs), de vos repas, pesées, activités, séances d'entraînement, de vos questions et, si vous le remplissez, du texte « Mon quotidien et mes contraintes ». Scan : la photo du plat ou de l'étiquette et l'indication éventuelle.</td><td>Seulement si vous avez saisi <strong>votre propre clé API</strong> et utilisez le coach ou le scan photo.</td></tr>
+      <tr><td>Firebase (Google)</td><td>Communauté : votre identifiant de compte Google, votre pseudo et ce que vous publiez ou écrivez dans vos cercles ; fiche coach, échanges avec un coach et, si vous l'activez, ce que vous partagez avec lui.</td><td>Seulement si vous rejoignez la communauté.</td></tr>
       <tr><td>Health Connect (Android)</td><td>Rien n'est envoyé : l'application <em>lit</em> vos calories dépensées et séances d'exercice, avec votre autorisation.</td><td>Onglet Activité.</td></tr>
     </table>
     <p>
       La table des aliments Ciqual (ANSES) est intégrée à l'application et consultée sans connexion.
-      Les données envoyées à Anthropic sont soumises à ses propres conditions ; ni votre nom ni votre adresse e-mail n'y sont transmis.
+      Les données envoyées au service d'IA sont soumises à ses propres conditions ; ni votre nom ni votre adresse e-mail n'y sont transmis.
+      Attention : sur l'offre gratuite de Gemini, Google indique pouvoir utiliser les contenus envoyés pour améliorer ses produits
+      (ce n'est pas le cas avec la facturation activée) ; chez Mistral AI, cette utilisation peut être désactivée dans votre console.
+      Anthropic n'entraîne pas ses modèles sur les données envoyées par son API. Vous choisissez le service et pouvez en changer à tout moment dans les Réglages. Si le relais automatique est activé et que ce service atteint sa limite, la même demande est envoyée au service de secours dont vous avez enregistré la clé.
     </p>
   </section>
 
@@ -74,6 +134,7 @@
       Capteur de pas (activité physique), notifications (rappels que vous activez), appareil photo via l'application
       Appareil photo d'Android (scan de photos) et scanner de codes-barres de Google Play. Une photo de scan n'est gardée que dans le cache temporaire de l'application (remplacée au scan suivant) ;
       les photos de fond que vous ajoutez à un thème restent sur votre téléphone.
+      Les photos de progression que vous prenez (onglet Évolution) restent dans l'espace privé de l'application sur votre téléphone ; elles sont incluses, réduites, dans vos sauvegardes (fichier exporté et copie dans votre Google Drive) et ne sont jamais partagées.
     </p>
   </section>
 
