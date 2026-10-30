@@ -3,44 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Confidentialité – Tazmert Plus</title>
-  <meta name="description" content="Politique de confidentialité de l'application Android Tazmert Plus.">
-  <link rel="icon" href="logo.png">
+  <title>Confidentialité – Sehaty track</title>
+  <meta name="description" content="Politique de confidentialité de l'application Android Sehaty track.">
+  <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <header>
     <h1>Politique de confidentialité</h1>
-    <p class="lead">Application Android Tazmert Plus — dernière mise à jour : 27 septembre 2026</p>
+    <p class="lead">Application Android Sehaty track (anciennement Tazmert Plus) — dernière mise à jour : 30 octobre 2026</p>
   </header>
 
   <section class="card">
     <h2>En résumé</h2>
     <p>
-      Tazmert Plus enregistre vos données <strong>sur votre téléphone</strong> et en garde une copie de sauvegarde
-      <strong>dans votre propre Google Drive</strong>. Le développeur n'exploite aucun serveur et ne reçoit
-      aucune de vos données. Il n'y a ni publicité, ni revente de données, ni outil de mesure d'audience.
+      Sehaty track enregistre vos données <strong>sur votre téléphone</strong> et en garde une copie de sauvegarde
+      <strong>dans votre propre Google Drive</strong>. Le serveur de l'application (Firebase, Google) ne reçoit que
+      votre <strong>pseudo, votre pays, votre date d'inscription et le dernier jour d'utilisation</strong> (registre des
+      membres), ainsi que ce que vous choisissez de partager dans la communauté ou avec un coach. Vos données de santé
+      (poids, repas, mesures) n'y sont jamais envoyées. Il n'y a ni publicité, ni revente de données, ni outil de mesure d'audience.
     </p>
   </section>
 
   <section class="card">
     <h2>Données que vous saisissez</h2>
     <p>
-      Profil (nom d'utilisateur, sexe, âge, taille, niveau d'activité, objectif, poids cible), pesées et composition
-      corporelle, repas et aliments, eau, activités, repas enregistrés, préférences de l'application.
+      Profil (pseudo, adresse e-mail, pays, sexe, âge, taille, niveau d'activité, objectif, poids cible), pesées et
+      composition corporelle, repas et aliments, eau, activités, repas enregistrés, préférences de l'application.
       Ces informations servent uniquement à calculer vos objectifs et à afficher votre suivi. Elles sont stockées
-      sur votre téléphone.
+      sur votre téléphone (et dans votre sauvegarde Google Drive si vous êtes connecté). Votre adresse e-mail n'est ni
+      envoyée à l'éditeur ni montrée aux autres membres ; votre pseudo et votre pays figurent au registre des membres
+      (ci-dessous), que seul l'éditeur consulte.
     </p>
   </section>
 
   <section class="card">
     <h2>Compte Google et Google Drive</h2>
-    <p>La connexion Google demande l'accès à :</p>
+    <p>Un compte Google est nécessaire pour utiliser l'application. La connexion Google demande l'accès à :</p>
     <table>
       <tr class="head"><th>Autorisation</th><th>Utilisation</th></tr>
       <tr><td>Adresse e-mail et nom (profil Google)</td><td>Identifier le compte connecté et l'afficher dans l'application. Le nom peut pré-remplir votre nom d'utilisateur.</td></tr>
-      <tr><td>Dossier de l'application dans Google Drive (<code>drive.appdata</code>)</td><td>Enregistrer et relire la sauvegarde de vos données (un fichier JSON), dans un espace caché réservé à Tazmert Plus. L'application n'a <strong>aucun accès</strong> à vos autres fichiers Drive.</td></tr>
+      <tr><td>Dossier de l'application dans Google Drive (<code>drive.appdata</code>)</td><td>Enregistrer et relire la sauvegarde de vos données (un fichier JSON), dans un espace caché réservé à Sehaty track. L'application n'a <strong>aucun accès</strong> à vos autres fichiers Drive.</td></tr>
     </table>
     <p>
       La sauvegarde est mise à jour automatiquement (à la fermeture de l'application et deux fois par jour, uniquement si
@@ -55,16 +59,147 @@
   </section>
 
   <section class="card">
+    <h2>Registre des membres</h2>
+    <p>
+      À l'inscription, l'application vous connecte aussi au serveur de Sehaty track avec le même compte Google
+      (Firebase Authentication). Cela permet d'activer un abonnement ou un code Premium, d'utiliser l'IA incluse et de rejoindre la
+      communauté sans nouvelle étape.
+    </p>
+    <p>
+      Le serveur tient un <strong>registre des membres</strong> : votre identifiant de compte, votre pseudo, votre pays,
+      la date de votre inscription et le dernier jour où vous avez utilisé l'application (mis à jour au plus une fois par jour).
+      Il sert uniquement à savoir combien de personnes utilisent l'application et dans quels pays, et à permettre à l'équipe
+      de vous écrire dans l'application (« Aide et support »). Seul l'éditeur peut le
+      consulter (règle appliquée par le serveur) ; il ne contient ni votre adresse e-mail, ni votre poids, ni vos repas.
+      Vous en êtes retiré en supprimant votre compte.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Aide et support</h2>
+    <p>
+      Depuis le Profil ou les Réglages, « Aide et support » ouvre une conversation avec l'équipe de Sehaty track.
+      Vos messages, votre pseudo et l'heure d'envoi sont enregistrés sur le serveur (Firebase) ; seuls vous et l'équipe
+      (les administrateurs de l'application) pouvez les lire. L'équipe peut aussi vous écrire la première, par exemple pour
+      répondre à une demande ou vous informer ; vous recevez alors une notification. N'y partagez jamais votre mot de passe.
+      La conversation est effacée avec votre compte.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Communauté (cercles privés)</h2>
+    <p>
+      La communauté est facultative.
+      Vous créez un cercle privé ou en rejoignez un avec un code d'invitation, ou en acceptant l'invitation d'un membre. Seuls les
+      membres d'un cercle voient ce qui y est publié ; cette règle est appliquée par le serveur, pas seulement par l'application.
+    </p>
+    <p>
+      <strong>Être trouvé pour une invitation</strong> : une fois connecté à la communauté, votre nom (celui de votre compte Google)
+      figure dans un annuaire des membres, pour que les autres puissent vous chercher par votre nom et vous inviter dans leur cercle.
+      Seul le nom y est enregistré (pas votre adresse e-mail ni vos données de santé), et une recherche ne renvoie que quelques noms
+      à la fois. Vous pouvez en sortir à tout moment (Communauté › Membres › Inviter : « Les autres membres peuvent me trouver par mon
+      nom »). Une invitation indique le cercle et qui vous invite ; elle disparaît quand vous l'acceptez ou la refusez.
+    </p>
+    <p>
+      Rien n'est partagé automatiquement : seul ce que vous choisissez de publier est envoyé, à savoir un repas (nom, aliments,
+      quantités, calories et macronutriments), une séance (exercices, séries, charges, durée, ressenti), votre journée ou vos objectifs
+      (calories et macronutriments face à vos objectifs, eau, pas, séances), l'image d'un graphique de votre Évolution (courbe de poids,
+      calories, mensurations, progression d'un exercice, objectifs) avec la ligne qui le résume, un texte libre, une photo si vous en ajoutez
+      une, dans une publication ou dans un message (réduite avant l'envoi),
+      vos réactions, commentaires, messages de discussion et messages privés (lisibles uniquement par vous et leur destinataire, pas même par le créateur du cercle), votre score dans les défis auxquels vous participez (un nombre de jours réussis, calculé sur votre téléphone), ainsi que le pseudo choisi pour le cercle. Votre profil et votre adresse e-mail
+      ne sont jamais montrés aux autres membres ; votre poids ne l'est que si vous le partagez vous-même (option « Inclure mon poids »
+      d'une journée ou de vos objectifs, ou graphique de votre courbe de poids).
+    </p>
+    <p>
+      Ces données sont hébergées par Google (Firebase Authentication pour la connexion, Cloud Firestore pour les cercles, les
+      publications et la discussion). Pour vous prévenir des nouveaux messages, le serveur envoie à votre téléphone un signal
+      sans contenu (Firebase Cloud Messaging, Google) dès qu'il se passe quelque chose pour vous ; l'application vérifie alors vos
+      cercles, uniquement en lecture (et sinon environ toutes les 2 heures). Pour cela, l'identifiant de notification de votre
+      téléphone est enregistré avec votre compte sur le serveur. Ces notifications se coupent d'un geste (cloche dans la Communauté). Vous pouvez supprimer vos publications et commentaires à tout moment, et quitter un cercle en supprimant
+      vos publications. Le créateur d'un cercle peut retirer un membre ou une publication. Pour effacer entièrement vos données
+      de communauté, supprimez votre compte (voir « Conservation et suppression »).
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Coachs (accompagnement gratuit)</h2>
+    <p>
+      Depuis la communauté, vous pouvez demander à un coach d'être accompagné, gratuitement. Les coachs sont des membres
+      dont le diplôme ou la qualification a été vérifié par l'éditeur de l'application avant leur apparition dans l'annuaire.
+    </p>
+    <p>
+      <strong>Si vous êtes coach</strong> : votre fiche (pseudo, spécialités, langues, diplôme déclaré, présentation) est
+      visible par les membres connectés une fois validée. La copie de diplôme que vous envoyez par e-mail sert uniquement à
+      cette vérification et n'est pas publiée. Vous pouvez retirer votre fiche à tout moment.
+    </p>
+    <p>
+      <strong>Si vous demandez un accompagnement</strong> : le coach reçoit votre pseudo et l'objectif que vous écrivez.
+      Une fois la demande acceptée, vos messages ne sont lisibles que par vous deux (pas même par l'éditeur de l'application) ;
+      chacun peut supprimer ses messages et mettre fin à l'accompagnement.
+    </p>
+    <p>
+      <strong>Partage avec votre coach (facultatif)</strong> : rien n'est partagé par défaut. Dans « Mon partage », vous pouvez
+      activer séparément : vos repas (aliments, quantités, calories, macronutriments et votre objectif calorique du jour), vos
+      séances et activités (exercices, séries, charges, durée, ressenti, autres activités enregistrées, ainsi que votre programme
+      d'entraînement avec le matériel, le niveau et les zones à ménager indiqués) et vos pesées. Seuls les
+      14 derniers jours sont envoyés, mis à jour automatiquement environ toutes les 2 heures, et lisibles uniquement par votre
+      coach tant que l'accompagnement est en cours. Couper un partage, ou mettre fin à l'accompagnement, efface les données
+      envoyées. Votre profil, vos photos et votre adresse e-mail ne sont jamais partagés.
+    </p>
+    <p>
+      <strong>Commentaires et propositions du coach</strong> : votre coach peut commenter une journée partagée et vous proposer
+      des objectifs nutritionnels ou un programme d'entraînement. Rien ne change sur votre téléphone tant que vous n'avez pas
+      touché « Appliquer » ; vous pouvez refuser.
+    </p>
+    <p>
+      <strong>Avis</strong> : si un coach vous accompagne ou vous a accompagné, vous pouvez publier un avis (note de 1 à 5 et
+      commentaire facultatif), visible par les membres connectés avec votre prénom. Vous pouvez le modifier ; l'éditeur de
+      l'application peut retirer un avis inapproprié.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Premium (abonnement Google Play ou code d'activation)</h2>
+    <p>
+      Certaines fonctions avancées sont réservées au Premium, obtenu de deux façons : un <strong>abonnement mensuel ou annuel
+      souscrit par Google Play</strong>, ou un code d'un an que l'éditeur vous remet.
+    </p>
+    <p>
+      <strong>Abonnement</strong> : le paiement est entièrement traité par Google Play, selon ses conditions ; l'application et
+      l'éditeur ne voient jamais vos coordonnées bancaires. Pour activer l'abonnement sur votre compte, l'application envoie
+      au serveur de Sehaty track le jeton d'achat fourni par Google Play ; le serveur le vérifie auprès de Google Play et enregistre
+      sur Firebase votre identifiant de compte, une empreinte du jeton, la formule (mensuelle ou annuelle), la date de fin de la
+      période payée et le renouvellement automatique ou non. Un achat est rattaché à un seul compte Sehaty track (une empreinte de
+      votre identifiant de compte accompagne l'achat). Vous résiliez à tout moment dans Google Play ; le Premium reste actif
+      jusqu'à la fin de la période payée.
+    </p>
+    <p>
+      <strong>Code</strong> : le règlement se fait directement avec l'éditeur, en dehors de l'application. Le code est lié à votre
+      compte : sont enregistrés sur Firebase votre identifiant de compte, votre prénom, le code utilisé, la date de début et la durée.
+    </p>
+    <p>
+      L'éditeur voit la liste des comptes Premium (prénom et dates) et peut arrêter un accès par code. Le statut est aussi gardé
+      sur votre téléphone pour fonctionner hors connexion. Supprimer votre compte efface ces données du serveur (pas l'historique
+      de vos achats chez Google Play, que Google conserve selon ses propres règles).
+    </p>
+  </section>
+
+  <section class="card">
     <h2>Services tiers utilisés, uniquement à votre demande</h2>
     <table>
       <tr class="head"><th>Service</th><th>Ce qui est envoyé</th><th>Quand</th></tr>
       <tr><td>Open Food Facts</td><td>Le texte recherché ou le code-barres scanné (rien qui vous identifie).</td><td>Recherche d'un produit du commerce.</td></tr>
-      <tr><td>Anthropic (Claude)</td><td>Coach : un résumé chiffré de votre profil, de vos repas, pesées et activités. Scan : la photo du plat ou de l'étiquette et l'indication éventuelle.</td><td>Seulement si vous avez saisi <strong>votre propre clé API</strong> et utilisez le coach ou le scan photo.</td></tr>
-      <tr><td>Health Connect (Android)</td><td>Rien n'est envoyé : l'application <em>lit</em> vos calories dépensées et séances d'exercice, avec votre autorisation.</td><td>Onglet Activité.</td></tr>
+      <tr><td>Le service d'IA que vous choisissez : Google (Gemini), Anthropic (Claude), Mistral AI, Ollama (Ollama Cloud), OpenRouter (modèles gratuits) ou Groq</td><td>Coach et bilans : un résumé chiffré de votre profil (sexe, âge, taille, poids, objectifs), de vos repas, pesées, mensurations, activités, séances d'entraînement, de votre sommeil (si vous l'avez autorisé), de votre jeûne intermittent (si vous le suivez), de vos questions et, si vous le remplissez, du texte « Mon quotidien et mes contraintes ». Scan : la photo du plat ou de l'étiquette et l'indication éventuelle. « Dicter un repas » : le texte de votre description (dictée ou écrite), sans enregistrement audio.</td><td>Si vous avez saisi <strong>votre propre clé API</strong> et utilisez le coach, le scan photo ou « Dicter un repas » ; ou, avec le Premium et sans clé personnelle, par l'intermédiaire du serveur de Sehaty track, qui transmet la demande à <strong>Mistral AI</strong>, à un modèle gratuit d'<strong>OpenRouter</strong> ou à <strong>Groq</strong>, ou en secours à <strong>Google (Gemini)</strong> ou à <strong>Ollama</strong> (le serveur ne conserve ni vos questions ni les réponses, seulement le nombre de demandes du jour et les jetons consommés).</td></tr>
+      <tr><td>Firebase (Google)</td><td>Registre des membres : votre identifiant de compte Google, votre pseudo, votre pays, votre date d'inscription et le dernier jour d'utilisation. Notifications : l'identifiant de notification de votre téléphone (Firebase Cloud Messaging), pour vous prévenir à l'instant d'un nouveau message. Aide et support : vos échanges avec l'équipe. Communauté : ce que vous publiez ou écrivez dans vos cercles ; fiche coach, échanges avec un coach et, si vous l'activez, ce que vous partagez avec lui ; statut Premium (et, pour un abonnement, sa formule, sa date de fin et une empreinte du jeton d'achat Google Play) ; compteurs d'utilisation de l'IA incluse dans le Premium.</td><td>Registre : dès l'inscription. Le reste : seulement si vous utilisez la communauté, un coach ou le Premium.</td></tr>
+      <tr><td>Health Connect (Android)</td><td>Rien n'est envoyé à Health Connect : l'application <em>lit</em> vos calories dépensées, vos séances d'exercice et, si vous l'autorisez à part, vos nuits de sommeil. Ces données restent sur votre téléphone ; seul un résumé (séances du jour, durée des dernières nuits) accompagne vos demandes au coach IA.</td><td>Onglet Activité (séances : à votre demande ; sommeil : à l'ouverture de l'onglet, une fois autorisé).</td></tr>
     </table>
     <p>
       La table des aliments Ciqual (ANSES) est intégrée à l'application et consultée sans connexion.
-      Les données envoyées à Anthropic sont soumises à ses propres conditions ; ni votre nom ni votre adresse e-mail n'y sont transmis.
+      Les données envoyées au service d'IA sont soumises à ses propres conditions ; ni votre nom ni votre adresse e-mail n'y sont transmis.
+      Attention : sur l'offre gratuite de Gemini, Google indique pouvoir utiliser les contenus envoyés pour améliorer ses produits
+      (ce n'est pas le cas avec la facturation activée) ; chez Mistral AI, cette utilisation peut être désactivée dans votre console.
+      Anthropic n'entraîne pas ses modèles sur les données envoyées par son API ; avec les modèles gratuits d'OpenRouter, les fournisseurs qui exécutent le modèle peuvent conserver les données envoyées ou s'en servir pour entraîner leurs modèles, selon leurs propres conditions ; Groq indique ne pas conserver les données par défaut, sauf jusqu'à 30 jours en cas d'abus suspecté ou de panne à analyser ; Ollama indique ne jamais conserver ni utiliser
+      les données envoyées pour entraîner des modèles (serveurs situés principalement aux États-Unis). Vous choisissez le service et pouvez en changer à tout moment dans les Réglages. Si le relais automatique est activé et que ce service atteint sa limite, la même demande est envoyée au service de secours dont vous avez enregistré la clé.
     </p>
   </section>
 
@@ -72,8 +207,11 @@
     <h2>Autorisations du téléphone</h2>
     <p>
       Capteur de pas (activité physique), notifications (rappels que vous activez), appareil photo via l'application
-      Appareil photo d'Android (scan de photos) et scanner de codes-barres de Google Play. Une photo de scan n'est gardée que dans le cache temporaire de l'application (remplacée au scan suivant) ;
+      Appareil photo d'Android (scan de photos) et scanner de codes-barres de Google Play.
+      « Dicter un repas » ouvre la reconnaissance vocale de votre téléphone (celle de Google, en général) : l'application ne demande pas l'accès
+      au micro et ne reçoit que le texte reconnu ; le traitement de la voix relève du service de reconnaissance de votre téléphone et de ses propres conditions. Une photo de scan n'est gardée que dans le cache temporaire de l'application (remplacée au scan suivant) ;
       les photos de fond que vous ajoutez à un thème restent sur votre téléphone.
+      Les photos de progression que vous prenez (onglet Évolution) restent dans l'espace privé de l'application sur votre téléphone ; elles sont incluses, réduites, dans vos sauvegardes (fichier exporté et copie dans votre Google Drive) et ne sont jamais partagées.
     </p>
   </section>
 
@@ -81,7 +219,10 @@
     <h2>Conservation et suppression</h2>
     <ul class="features">
       <li><strong>Sur le téléphone</strong> : vos données restent tant que l'application est installée. Les désinstaller ou effacer les données de l'application les supprime.</li>
-      <li><strong>Sur Google Drive</strong> : la sauvegarde reste dans votre Drive jusqu'à ce que vous la supprimiez. Sur drive.google.com : Paramètres › Gérer les applications › Tazmert Plus › Options › « Supprimer les données d'application cachées ».</li>
+      <li><strong>Sur Google Drive</strong> : la sauvegarde reste dans votre Drive jusqu'à ce que vous la supprimiez. Sur drive.google.com : Paramètres › Gérer les applications › Sehaty track › Options › « Supprimer les données d'application cachées ».</li>
+      <li><strong>Supprimer votre compte</strong> : dans l'application, Profil › Réglages › Compte › « Supprimer mon compte ».
+        Tout ce que le serveur garde sur vous, votre sauvegarde Google Drive et les données du téléphone sont effacés immédiatement.
+        Sans l'application : voir <a href="suppression-compte.html">la page de suppression du compte</a>.</li>
       <li><strong>Retirer l'accès</strong> : à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, ou via « Se déconnecter » dans les Réglages de l'application.</li>
     </ul>
   </section>
@@ -101,7 +242,7 @@
   </section>
 
   <footer>
-    <p><a href="index.html">Accueil</a> · © 2026 Tazmert Plus</p>
+    <p><a href="index.html">Accueil</a> · © 2026 Sehaty track</p>
   </footer>
 </main>
 </body>
