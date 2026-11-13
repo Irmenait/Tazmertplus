@@ -12,7 +12,7 @@
 <main>
   <header>
     <h1>Politique de confidentialité</h1>
-    <p class="lead">Application Android Sehaty track (anciennement Tazmert Plus) — dernière mise à jour : 30 octobre 2026</p>
+    <p class="lead">Application Android Sehaty track (anciennement Tazmert Plus) — dernière mise à jour : 13 novembre 2026</p>
   </header>
 
   <section class="card">
@@ -22,7 +22,7 @@
       <strong>dans votre propre Google Drive</strong>. Le serveur de l'application (Firebase, Google) ne reçoit que
       votre <strong>pseudo, votre pays, votre date d'inscription et le dernier jour d'utilisation</strong> (registre des
       membres), ainsi que ce que vous choisissez de partager dans la communauté ou avec un coach. Vos données de santé
-      (poids, repas, mesures) n'y sont jamais envoyées. Il n'y a ni publicité, ni revente de données, ni outil de mesure d'audience.
+      (poids, repas, mesures) n'y sont jamais envoyées. Il n'y a ni publicité, ni revente de données, ni outil de mesure d'audience. Seuls des rapports de plantage techniques sont envoyés quand l'application plante, et vous pouvez les désactiver.
     </p>
   </section>
 
@@ -87,11 +87,19 @@
   </section>
 
   <section class="card">
-    <h2>Communauté (cercles privés)</h2>
+    <h2>Communauté (cercles privés et canal public)</h2>
     <p>
       La communauté est facultative.
       Vous créez un cercle privé ou en rejoignez un avec un code d'invitation, ou en acceptant l'invitation d'un membre. Seuls les
       membres d'un cercle voient ce qui y est publié ; cette règle est appliquée par le serveur, pas seulement par l'application.
+    </p>
+    <p>
+      <strong>Canal public</strong> : une fois connecté à la communauté, vous avez aussi accès à un fil de publications ouvert à
+      tous les membres de la communauté. Ce que vous choisissez d'y publier (un message, une photo, un repas, votre journée, une séance,
+      vos objectifs ou l'image d'un graphique, avec les mêmes informations que dans un cercle) et vos réactions sont visibles par tous
+      ces membres, avec votre pseudo (celui de votre profil). Rien n'y est publié sans que vous choisissiez « Canal public » ; il n'y a
+      ni commentaires ni notifications. Vous pouvez supprimer vos publications à tout moment et signaler celles des autres ; l'équipe
+      peut supprimer une publication signalée et retirer à un membre la possibilité d'y publier.
     </p>
     <p>
       <strong>Être trouvé pour une invitation</strong> : une fois connecté à la communauté, votre nom (celui de votre compte Google)
@@ -106,7 +114,7 @@
       (calories et macronutriments face à vos objectifs, eau, pas, séances), l'image d'un graphique de votre Évolution (courbe de poids,
       calories, mensurations, progression d'un exercice, objectifs) avec la ligne qui le résume, un texte libre, une photo si vous en ajoutez
       une, dans une publication ou dans un message (réduite avant l'envoi),
-      vos réactions, commentaires, messages de discussion et messages privés (lisibles uniquement par vous et leur destinataire, pas même par le créateur du cercle), votre score dans les défis auxquels vous participez (un nombre de jours réussis, calculé sur votre téléphone), ainsi que le pseudo choisi pour le cercle. Votre profil et votre adresse e-mail
+      vos réactions, commentaires, messages de discussion (et les réponses qui les citent), les messages privés envoyés avant novembre 2026 entre membres d'un cercle, qui ne peuvent plus en recevoir de nouveaux (lisibles uniquement par vous et leur destinataire, pas même par le créateur du cercle), votre score dans les défis auxquels vous participez (un nombre de jours réussis, calculé sur votre téléphone), ainsi que le pseudo choisi pour le cercle. Votre profil et votre adresse e-mail
       ne sont jamais montrés aux autres membres ; votre poids ne l'est que si vous le partagez vous-même (option « Inclure mon poids »
       d'une journée ou de vos objectifs, ou graphique de votre courbe de poids).
     </p>
@@ -200,6 +208,22 @@
       (ce n'est pas le cas avec la facturation activée) ; chez Mistral AI, cette utilisation peut être désactivée dans votre console.
       Anthropic n'entraîne pas ses modèles sur les données envoyées par son API ; avec les modèles gratuits d'OpenRouter, les fournisseurs qui exécutent le modèle peuvent conserver les données envoyées ou s'en servir pour entraîner leurs modèles, selon leurs propres conditions ; Groq indique ne pas conserver les données par défaut, sauf jusqu'à 30 jours en cas d'abus suspecté ou de panne à analyser ; Ollama indique ne jamais conserver ni utiliser
       les données envoyées pour entraîner des modèles (serveurs situés principalement aux États-Unis). Vous choisissez le service et pouvez en changer à tout moment dans les Réglages. Si le relais automatique est activé et que ce service atteint sa limite, la même demande est envoyée au service de secours dont vous avez enregistré la clé.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Rapports de plantage</h2>
+    <p>
+      Quand l'application se ferme à cause d'une erreur, un rapport technique est envoyé à l'éditeur par
+      <strong>Firebase Crashlytics</strong> (Google) pour corriger le problème. Il contient l'endroit du code où l'erreur s'est
+      produite, le modèle du téléphone, les versions d'Android et de l'application, la langue choisie, la date, et un identifiant
+      d'installation aléatoire (qui ne permet pas de retrouver votre compte). À chaque ouverture de l'application, un signal technique de session (cet identifiant, la date et le modèle du téléphone, sans aucun contenu) est aussi envoyé, pour mesurer la part des utilisations sans plantage. Il ne contient <strong>ni vos données de santé
+      (repas, poids, mesures), ni votre nom, ni votre adresse e-mail, ni votre identifiant de compte</strong>.
+    </p>
+    <p>
+      Ces rapports sont envoyés par défaut, dans notre intérêt légitime à fournir une application qui fonctionne. Vous pouvez les
+      désactiver à tout moment : Profil › Réglages › Données et sauvegarde › « Envoyer un rapport quand l'application plante » ;
+      les rapports pas encore envoyés sont alors effacés. Google conserve les rapports 90 jours.
     </p>
   </section>
 
