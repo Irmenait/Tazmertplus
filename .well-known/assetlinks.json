@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sehatytrack.app",
+      "sha256_cert_fingerprints": [
+        "1C:68:13:D9:7E:47:86:6D:E1:13:86:78:79:A7:E3:4A:80:D2:1A:39:16:8F:65:BD:E8:38:6F:88:88:3C:DB:70"
+      ]
+    }
+  }
+]

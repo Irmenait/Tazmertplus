@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Un défi t'attend · Sehaty track</title>
+  <meta name="description" content="Un proche te lance un défi sur Sehaty track : rejoins-le en un geste.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.png" alt="Logo Sehaty track">
+    <h1>Un défi t'attend</h1>
+    <p class="lead">Un proche te lance un défi sur Sehaty track : hydratation, séances, journal rempli… Chacun avance avec ses propres données, seul le score est partagé.</p>
+  </header>
+
+  <section class="card">
+    <h2>Rejoindre le défi</h2>
+    <p><a id="open" class="button" href="#">Ouvrir dans Sehaty track</a></p>
+    <p>Pas encore l'application ? <a id="store" href="https://play.google.com/store/apps/details?id=com.sehatytrack.app">Installe Sehaty track sur Google Play</a>, puis reviens sur ce lien.</p>
+    <p id="manual">Sinon, dans l'application : Communauté › Rejoindre, avec le code <strong id="code"></strong>.</p>
+    <p id="nocode" hidden>Ce lien ne contient pas de code de défi. Demande à ton proche de le renvoyer depuis l'application (carte du défi › Partager le lien).</p>
+  </section>
+
+  <footer>
+    <a href="index.html">Accueil</a> · <a href="confidentialite.html">Confidentialité</a> · © 2026 Sehaty track
+  </footer>
+</main>
+<script>
+  (function () {
+    var code = (new URLSearchParams(location.search).get('c') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6);
+    var open = document.getElementById('open');
+    if (code.length !== 6) {
+      document.getElementById('manual').hidden = true;
+      document.getElementById('nocode').hidden = false;
+      open.hidden = true;
+      return;
+    }
+    document.getElementById('code').textContent = code.replace(/(.{3})(.{3})/, '$1 $2');
+    var store = 'https://play.google.com/store/apps/details?id=com.sehatytrack.app';
+    // Android: the app's own scheme, with the store when it isn't installed.
+    var intent = 'intent://defi?c=' + code + '#Intent;scheme=sehatytrack;package=com.sehatytrack.app;S.browser_fallback_url=' + encodeURIComponent(store) + ';end';
+    open.href = intent;
+    if (/android/i.test(navigator.userAgent)) {
+      // One try on arrival; the button stays for a second one.
+      setTimeout(function () { location.href = intent; }, 400);
+    }
+  })();
+</script>
+</body>
+</html>
